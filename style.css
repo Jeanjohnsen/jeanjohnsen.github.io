@@ -71,8 +71,8 @@ a:visited {
 }
 
 .strava-button-container {
-    text-align: center; /* Center the button on the page */
-    margin-top: 20px; /* Add some space above the button */
+    text-align: center;
+    margin-top: 20px;
   }
   
   .strava-button {
@@ -81,19 +81,21 @@ a:visited {
     padding: 10px 20px;
     font-size: 16px;
     color: white;
-    background-color: #fc4c02; /* Strava's brand color */
+    background-color: #fc4c02;
     border: none;
     border-radius: 5px;
     text-decoration: none;
     font-family: "Computer Modern Serif", serif;
+    max-width: 200px; /* Limit the button width */
   }
   
   .strava-button:hover {
-    background-color: #e04000; /* Darken the button on hover */
+    background-color: #e04000;
   }
   
   .strava-icon {
-    width: 20px; /* Size of the Strava logo */
+    width: 20px;
     height: 20px;
-    margin-right: 10px; /* Space between the icon and the text */
+    margin-right: 10px;
+    max-width: 100%; /* Ensure it doesn't scale beyond container */
   }
