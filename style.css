@@ -37,7 +37,7 @@ body {
     height: auto; /* Maintains the aspect ratio of the image */
     margin: -12em; /* Reset any additional margins */
     position: relative;
-    top: -360px; /* Move the image 20px up from its normal position */
+    top: -419px; /* Move the image 20px up from its normal position */
     left: -20px;
 }
 
@@ -69,3 +69,31 @@ a:visited {
 ::selection {
     background: var(--selection);
 }
+
+.strava-button-container {
+    text-align: center; /* Center the button on the page */
+    margin-top: 20px; /* Add some space above the button */
+  }
+  
+  .strava-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #fc4c02; /* Strava's brand color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "Computer Modern Serif", serif;
+  }
+  
+  .strava-button:hover {
+    background-color: #e04000; /* Darken the button on hover */
+  }
+  
+  .strava-icon {
+    width: 20px; /* Size of the Strava logo */
+    height: 20px;
+    margin-right: 10px; /* Space between the icon and the text */
+  }
