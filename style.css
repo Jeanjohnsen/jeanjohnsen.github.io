@@ -73,29 +73,30 @@ a:visited {
 .strava-button-container {
     text-align: center;
     margin-top: 20px;
-  }
+}
   
-  .strava-button {
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: #fc4c02;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-family: "Computer Modern Serif", serif;
-    max-width: 200px; /* Limit the button width */
-  }
   
-  .strava-button:hover {
-    background-color: #e04000;
-  }
-  
-  .strava-icon {
+.strava-button:hover {
+      background-color: #e04000;
+}
+    
+.strava-button {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      background-color: #fc4c02;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-family: "Computer Modern Serif", serif;
+      max-width: 200px; /* Limit the button width */
+}
+
+.strava-icon {
     width: 20px;
     height: 20px;
     margin-right: 10px;
     max-width: 100%; /* Ensure it doesn't scale beyond container */
-  }
+}
