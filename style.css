@@ -30,6 +30,10 @@ body {
     padding: 0 10px;
 }
 
+img {
+    width: 50%;
+}
+
 a:hover {
     border-bottom: 1px solid #5aa8c8;
 }
