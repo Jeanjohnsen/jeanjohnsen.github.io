@@ -1,14 +1,16 @@
 :root {
     --body-bg: #FDFCFB;
-    --body-color: #1E1E1E;
-    --link: #00B7A8;
-    --selection: #BB86FC;
+    --header-color: #1E1E1E;
+    --body-color: #333;
+    --link: blue;
+    --selection: blue;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --body-bg: #1E1E1E;
-        --body-color: #E0E1E1;
+        --body-color: #c2c1c1;
+        --header-color: #FDFCFB;
         --link: #00DAC6;
         --selection: #BB86FC;
     }
@@ -21,24 +23,12 @@
 
 body {
     background-color: var(--body-bg);
-    font-family: "Computer Modern Serif", serif;
+    font-family: monospace;
     color: var(--body-color);
-    max-width: 500px;
-    margin: 0 auto;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    padding: 0 10px;
-}
-
-.img-container img {
-    display: inline-block; /* Allows centering within the container */
-    transform: scale(0.35); /* Scales the image to 50% of its original size */
-    max-width: 100%; /* Ensures the image doesn't exceed the width of its container */
-    height: auto; /* Maintains the aspect ratio of the image */
-    margin: -12em; /* Reset any additional margins */
-    position: relative;
-    top: -419px; /* Move the image 20px up from its normal position */
-    left: -20px;
+    max-width: 66ch;
+    margin: 8px auto;
+    padding: 32px;
+    line-height: 1.25em;
 }
 
 a:hover {
@@ -47,15 +37,10 @@ a:hover {
 
 h1,
 h2 {
+    color: var(--header-color);
     font-weight: normal;
-    margin-bottom: 0.5em;
-    margin-top: 0.7em;
-}
-
-p,
-ul,
-li {
-    margin-top: 0.25em;
+    margin-bottom: 1.0em;
+    margin-top: 1.0em;
 }
 
 a,
@@ -63,12 +48,12 @@ a:link,
 a:visited {
     color: var(--link);
     text-decoration: none;
-    border-bottom: 1px dotted var(--link);
 }
 
 ::selection {
     background: var(--selection);
 }
+
 
 .strava-button-container {
     text-align: center;
@@ -84,13 +69,11 @@ a:visited {
       display: inline-flex;
       align-items: center;
       padding: 10px 20px;
-      font-size: 16px;
       color: white;
       background-color: #fc4c02;
       border: none;
       border-radius: 5px;
       text-decoration: none;
-      font-family: "Computer Modern Serif", serif;
       max-width: 200px; /* Limit the button width */
 }
 
@@ -99,4 +82,15 @@ a:visited {
     height: 20px;
     margin-right: 10px;
     max-width: 100%; /* Ensure it doesn't scale beyond container */
+}
+
+.img-container img {
+    display: inline-block; /* Allows centering within the container */
+    transform: scale(0.35); /* Scales the image to 50% of its original size */
+    max-width: 100%; /* Ensures the image doesn't exceed the width of its container */
+    height: auto; /* Maintains the aspect ratio of the image */
+    margin-top: -8cm;
+    /* margin: 0em; Reset any additional margins */
+    /*top: -419px; /* Move the image 20px up from its normal position */
+    /*left: -20px;*/
 }
