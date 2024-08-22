@@ -100,7 +100,7 @@ a:visited {
 @media screen and (max-width: 1170px) {
     .img-container img {
         transform: scale(0.45); /* Adjust scale for smaller screens */
-        margin-top: 0.5em;
+        margin-top: -7.5em;
     }
 
     .strava-button {
