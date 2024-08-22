@@ -87,7 +87,7 @@ a:visited {
 .img-container img {
     display: block;
     margin: 0 auto;
-    transform: scale(0.35);
+    transform: scale(0.45);
     max-width: 100%;
     height: auto;
     /* Remove any negative margin or positioning */
@@ -99,7 +99,7 @@ a:visited {
 /* Responsive adjustments */
 @media screen and (max-width: 1170px) {
     .img-container img {
-        transform: scale(0.45); /* Adjust scale for smaller screens */
+        transform: scale(0.5); /* Adjust scale for smaller screens */
         margin-top: -7.5em;
     }
 
