@@ -97,9 +97,10 @@ a:visited {
 }
 
 /* Responsive adjustments */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1170px) {
     .img-container img {
         transform: scale(0.45); /* Adjust scale for smaller screens */
+        margin-top: 1em;
     }
 
     .strava-button {
