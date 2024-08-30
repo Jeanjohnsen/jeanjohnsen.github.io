@@ -1,9 +1,9 @@
 :root {
-    --body-bg: #1E1E1E;
-    --body-color: #c2c1c1;
-    --header-color: #FDFCFB;
-    --link: #00DAC6;
-    --selection: #BB86FC;
+    --body-bg: #FDFCFB;
+    --header-color: #1E1E1E;
+    --body-color: #333;
+    --link: blue;
+    --selection: blue;
 }
 
 @media (prefers-color-scheme: dark) {
