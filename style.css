@@ -107,3 +107,29 @@ a:visited {
         padding: 8px 16px; /* Slightly reduce padding on smaller screens */
     }
 }
+
+.timeline {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+}
+
+.timeline-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+    padding: 10px;
+    margin: 10px 0;
+    background: #f4f4f4;
+    border-left: 3px solid #333;
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: #333;
+}
