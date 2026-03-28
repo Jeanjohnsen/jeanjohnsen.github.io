@@ -1,86 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Fluid base font */
+html {
+    font-size: clamp(1rem, 0.9rem + 0.15vw, 1.2rem);
+}
+
 :root {
-    --body-bg: #FDFCFB;
-    --header-color: #1E1E1E;
-    --body-color: #333;
-    --link: blue;
-    --selection: blue;
+    --bg: #14161a;
+    --panel: rgba(255,255,255,0.02);
+    --body-bg: #14161a;
+    --header-color: #d6d9df;
+    --body-color: #a9adb8;
+    --muted: #8a909c;
+    --link: #18d4c8;
+    --selection: #7e5ac9;
+    --accent: #00b7b7;
+    --accent2: #7e5ac9;
+    --border: #2a2f38;
+    --radius: 12px;
+    --card-shadow: 0 8px 32px rgba(0,0,0,0.25);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
     :root {
-        --body-bg: #1E1E1E;
-        --body-color: #c2c1c1;
-        --header-color: #FDFCFB;
-        --link: #00DAC6;
-        --selection: #BB86FC;
+        --bg: #f4f5f7;
+        --panel: rgba(0,0,0,0.015);
+        --body-bg: #f4f5f7;
+        --header-color: #1a1d24;
+        --body-color: #4a4f5c;
+        --muted: #6b7280;
+        --link: #008f8f;
+        --accent: #008f8f;
+        --accent2: #6b4fad;
+        --border: #d8dbe2;
+        --card-shadow: 0 8px 32px rgba(0,0,0,0.08);
     }
-}
-
-.image-container {
-    background-image: url("etc/pfp.svg");
-    width: 140px;
-    height: 140px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-    overflow: hidden;
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
 
 body {
-    background-color: var(--body-bg);
-    font-family: monospace;
+    background: radial-gradient(ellipse at top, color-mix(in srgb, var(--bg), white 4%) 0%, var(--bg) 55%);
+    min-height: 100vh;
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
     color: var(--body-color);
-    max-width: 66ch;
-    margin: 8px auto;
-    padding: 32px;
-    line-height: 1.25em;
+    max-width: 56rem;
+    margin: 0 auto;
+    padding: 2rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
 }
 
-
-a:hover {
-    border-bottom: 1px solid #5aa8c8;
-}
-
-h1,
-h2 {
-    color: var(--header-color);
-    font-weight: normal;
-    margin-bottom: 1.0em;
-    margin-top: 1.0em;
-}
-
-a,
-a:link,
-a:visited {
+a, a:link, a:visited {
     color: var(--link);
     text-decoration: none;
+    transition: color 0.15s;
+}
+
+a:hover {
+    color: var(--accent2);
+    border-bottom: none;
+}
+
+h1, h2, h3 {
+    color: var(--header-color);
+    margin-bottom: 0.5em;
+    margin-top: 1.5em;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+h2 {
+    font-weight: 600;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.82em;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
 }
 
 ::selection {
     background: var(--selection);
+    color: #fff;
 }
 
+/* Profile image */
+.image-container {
+    background-image: url("etc/pfp.svg");
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--border);
+}
+
+/* Lists */
+ul {
+    padding-left: 1.25em;
+    margin: 0.5rem 0;
+}
+
+li {
+    margin-bottom: 0.35rem;
+    line-height: 1.55;
+}
+
+/* Code */
+code {
+    background: rgba(255,255,255,0.06);
+    padding: 0.1em 0.4em;
+    border-radius: 4px;
+    font-family: 'SF Mono', Consolas, monospace;
+    font-size: 0.88em;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    max-width: 100%;
+    margin: 0.5rem 0;
+}
+
+.timeline-item {
+    background: linear-gradient(180deg, var(--panel), rgba(0,0,0,0.02));
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius);
+    padding: 0.875rem 1rem;
+    margin: 0.5rem 0;
+    transition: border-color 0.2s;
+}
+
+.timeline-item:hover {
+    border-color: color-mix(in srgb, var(--border), var(--accent) 30%);
+    border-left-color: var(--accent);
+}
+
+.timeline-date {
+    font-weight: 600;
+    font-size: 0.78em;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.15rem;
+}
+
+.timeline-content {
+    font-size: 0.92em;
+    color: var(--body-color);
+    line-height: 1.55;
+}
+
+.timeline-header {
+    color: var(--accent2);
+}
+
+/* Strava button */
 .strava-button-container {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
-  
+
 .strava-button {
     display: inline-flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0.5rem 1rem;
     color: white;
     background-color: #fc4c02;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     text-decoration: none;
-    max-width: 200px; /* Limit the button width */
+    max-width: 200px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85em;
+    transition: all 0.15s;
+}
+
+.strava-button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
 }
 
 .strava-icon {
@@ -90,56 +199,121 @@ a:visited {
     max-width: 100%;
 }
 
+/* Athlete image */
 .img-container {
     text-align: center;
-    margin-top: 20px; /* Adjusts the space above the image */
-    margin-bottom: 20px; /* Adjusts the space below the image */
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .img-container img {
     display: block;
     margin: 0 auto;
-    transform: scale(0.45);
     max-width: 100%;
     height: auto;
-    /* Remove any negative margin or positioning */
-    margin-top: -8cm;
-    /* position: relative; */
-    /* top: -20px; */
+    border-radius: var(--radius);
 }
 
-/* Responsive adjustments */
-@media screen and (max-width: 1170px) {
+/* Footer */
+footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.82em;
+    color: var(--muted);
+}
+
+/* CV floating button */
+.cv-btn {
+    position: fixed;
+    bottom: 1.75rem;
+    right: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: var(--bg);
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    color: var(--accent);
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.1;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: var(--card-shadow);
+    z-index: 999;
+}
+
+.cv-btn:hover {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+    border-bottom: 1px solid var(--accent);
+    box-shadow: 0 0 20px rgba(0, 183, 183, 0.25);
+    transform: translateY(-2px);
+}
+
+.cv-btn-label {
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.cv-btn-sub {
+    font-size: 0.42em;
+    opacity: 0.7;
+    letter-spacing: 0.02em;
+}
+
+/* Project cards */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    gap: 0.75rem;
+    margin: 1rem 0;
+}
+
+.project-card {
+    background: linear-gradient(180deg, var(--panel), rgba(0,0,0,0.03));
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem 1.125rem;
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+
+.project-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 4px 20px rgba(0, 183, 183, 0.08);
+    transform: translateY(-1px);
+}
+
+.project-card h3 {
+    margin: 0 0 0.25rem 0;
+    font-size: 0.92em;
+    color: var(--accent);
+}
+
+.project-card p {
+    font-size: 0.82em;
+    color: var(--muted);
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 16px;
+    }
+    body {
+        padding: 1rem;
+    }
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
     .img-container img {
-        transform: scale(0.5); /* Adjust scale for smaller screens */
-        margin-top: -7.5em;
+        max-width: 100%;
     }
-
-    .strava-button {
-        padding: 8px 16px; /* Slightly reduce padding on smaller screens */
-    }
-}
-
-.timeline {
-    position: relative;
-    max-width: 600px;
-    margin: auto;
-}
-
-.timeline-item {
-    display: block; /* Ensure items are visible */
-    padding: 10px;
-    margin: 10px 0;
-    background: #f4f4f4;
-    border-left: 3px solid #00DAC6; /* Highlight color */
-    color: #333; /* Default text color */
-}
-
-.timeline-date {
-    font-weight: bold;
-    color: #c2c1c1; /* Light color for dates */
-}
-
-.timeline-header {
-    color: #BB86FC; /* Same color as timeline items */
 }
