@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 178 64" role="img" aria-label="Høj Frekvens">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#7c6af5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ikon-boks -->
+  <rect x="0" y="2" width="60" height="60" rx="14" fill="#0f1117"/>
+  <!-- 3 bølgecykler i ikonet -->
+  <path d="M7,32 C10,24 13,24 16,32 C19,40 22,40 25,32 C28,24 31,24 34,32 C37,40 40,40 43,32 C46,24 49,24 53,32"
+        fill="none" stroke="url(#g)" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- "Høj" — fed, lys -->
+  <text x="74" y="30"
+        font-family="Satoshi, ui-sans-serif, system-ui, -apple-system, sans-serif"
+        font-weight="700"
+        font-size="22"
+        fill="#e4e6f0">Høj</text>
+
+  <!-- "Frekvens" — regular, dæmpet -->
+  <text x="74" y="52"
+        font-family="Satoshi, ui-sans-serif, system-ui, -apple-system, sans-serif"
+        font-weight="500"
+        font-size="18"
+        letter-spacing="0.8"
+        fill="#9ca3b8">Frekvens</text>
+</svg>
