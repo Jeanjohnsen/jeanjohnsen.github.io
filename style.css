@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&f[]=clash-display@500,600,700&display=swap');
 
 /* Fluid base font */
 html {
@@ -6,34 +6,39 @@ html {
 }
 
 :root {
-    --bg: #14161a;
-    --panel: rgba(255,255,255,0.02);
-    --body-bg: #14161a;
-    --header-color: #d6d9df;
-    --body-color: #a9adb8;
-    --muted: #8a909c;
-    --link: #18d4c8;
-    --selection: #7e5ac9;
-    --accent: #00b7b7;
-    --accent2: #7e5ac9;
-    --border: #2a2f38;
+    --bg: #0f1117;
+    --panel: rgba(255,255,255,0.03);
+    --body-bg: #0f1117;
+    --header-color: #e4e6f0;
+    --body-color: #9ca3b8;
+    --muted: #6b7280;
+    --link: #22d3ee;
+    --selection: #6366f1;
+    --accent: #06b6d4;
+    --accent2: #7c6af5;
+    --border: #1e2433;
+    --grid: #262e40;
     --radius: 12px;
-    --card-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    --card-shadow: 0 8px 32px rgba(0,0,0,0.32);
+    --math-inline-size: 1.08em;
+    --math-display-size: clamp(1.12em, 1.04em + 0.28vw, 1.24em);
+    --math-scrollbar: color-mix(in srgb, var(--accent2) 40%, transparent);
 }
 
 @media (prefers-color-scheme: light) {
     :root {
-        --bg: #f4f5f7;
-        --panel: rgba(0,0,0,0.015);
-        --body-bg: #f4f5f7;
-        --header-color: #1a1d24;
-        --body-color: #4a4f5c;
+        --bg: #f8fafc;
+        --panel: rgba(0,0,0,0.02);
+        --body-bg: #f8fafc;
+        --header-color: #0f172a;
+        --body-color: #374151;
         --muted: #6b7280;
-        --link: #008f8f;
-        --accent: #008f8f;
-        --accent2: #6b4fad;
-        --border: #d8dbe2;
-        --card-shadow: 0 8px 32px rgba(0,0,0,0.08);
+        --link: #0891b2;
+        --accent: #0891b2;
+        --accent2: #6055d0;
+        --border: #e2e8f0;
+        --grid: #e8edf5;
+        --card-shadow: 0 8px 32px rgba(0,0,0,0.06);
     }
 }
 
