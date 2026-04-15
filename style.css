@@ -288,6 +288,57 @@ code {
     font-size: 0.78rem;
 }
 
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.35rem;
+}
+
+.hero-link-button,
+.hero-link-button:link,
+.hero-link-button:visited {
+    display: inline-grid;
+    gap: 0.18rem;
+    width: fit-content;
+    padding: 0.9rem 1rem;
+    border: 1px solid rgba(6, 182, 212, 0.24);
+    border-radius: 1rem;
+    background: linear-gradient(180deg, rgba(6, 182, 212, 0.1), rgba(6, 182, 212, 0.04));
+    color: var(--header-color);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.08);
+    transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
+}
+
+.hero-link-button:hover {
+    color: var(--header-color);
+    transform: translateY(-2px);
+    border-color: rgba(124, 106, 245, 0.26);
+    background: linear-gradient(180deg, rgba(124, 106, 245, 0.12), rgba(6, 182, 212, 0.05));
+    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.12);
+}
+
+.hero-link-button:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.24);
+}
+
+.hero-link-title {
+    font-family: 'Clash Display', ui-sans-serif, system-ui, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+}
+
+.hero-link-meta {
+    color: var(--body-color);
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
 .hero-facts {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -590,6 +641,52 @@ code {
     color: inherit;
 }
 
+.contact-row-strava,
+.contact-row-strava:link,
+.contact-row-strava:visited {
+    position: relative;
+    overflow: hidden;
+    border-color: rgba(252, 76, 2, 0.5);
+    background:
+        radial-gradient(circle at top right, rgba(255, 255, 255, 0.22), transparent 34%),
+        linear-gradient(135deg, #fc4c02 0%, #ff6a00 52%, #ff7f32 100%);
+    box-shadow: 0 20px 38px rgba(252, 76, 2, 0.22);
+}
+
+.contact-row-strava::before {
+    content: "STRAVA";
+    position: absolute;
+    top: 0.95rem;
+    right: 1rem;
+    color: rgba(255, 255, 255, 0.32);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+}
+
+.contact-row-strava .contact-label {
+    width: fit-content;
+    padding: 0.22rem 0.52rem;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.12);
+    color: rgba(255, 255, 255, 0.94);
+}
+
+.contact-row-strava strong {
+    color: #fff;
+}
+
+.contact-row-strava span {
+    color: rgba(255, 244, 239, 0.9);
+}
+
+.contact-row-strava:hover {
+    transform: translateY(-3px);
+    border-color: rgba(255, 255, 255, 0.32);
+    box-shadow: 0 24px 42px rgba(252, 76, 2, 0.28);
+}
+
 footer {
     margin-top: 3rem;
     padding-top: 1rem;
@@ -773,6 +870,7 @@ footer {
 
     .hero-copy,
     .hero-intro,
+    .hero-link-button,
     .hero-facts,
     .section-head,
     .work-item,
