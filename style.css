@@ -647,9 +647,51 @@ footer {
     text-transform: uppercase;
 }
 
+.sports-profile-shot {
+    width: 4.25rem;
+    height: 4.25rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    border: 1px solid var(--border);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.sports-detail-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+    gap: 1rem;
+    align-items: start;
+}
+
+.sports-photo-card {
+    margin: 0;
+    display: grid;
+    gap: 0.8rem;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: linear-gradient(180deg, var(--panel), transparent);
+}
+
+.sports-photo-card img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: calc(var(--radius) - 6px);
+    border: 1px solid var(--border);
+    background: var(--panel-strong);
+}
+
+.sports-photo-card figcaption {
+    color: var(--muted);
+    font-size: 0.94rem;
+    line-height: 1.6;
+}
+
 @media (max-width: 1040px) {
     .hero-facts,
-    .elsewhere-grid {
+    .elsewhere-grid,
+    .sports-detail-grid {
         grid-template-columns: 1fr;
     }
 }
