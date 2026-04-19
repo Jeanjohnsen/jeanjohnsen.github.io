@@ -1,171 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The athletics chapter behind Jean Johnsen's work in software, automation and engineering.">
-  <meta name="keywords" content="Jean Johnsen, athletics, 800m, Team Danmark, Adidas, middle distance">
-  <meta name="author" content="Jean Johnsen">
-  <meta property="og:title" content="Jean Johnsen | Athletics">
-  <meta property="og:site_name" content="Jean Johnsen">
-  <meta property="og:url" content="https://jeanjohnsen.github.io/sports/">
-  <meta property="og:description" content="Former elite athlete with a background in national and international 800m competition.">
-  <meta property="og:type" content="website">
-  <link rel="icon" type="image/svg+xml" href="../logo/hojfrekvens-icon.svg">
-  <link rel="stylesheet" href="../style.css">
-  <script defer src="https://cloud.umami.is/script.js" data-website-id="1186d00c-e282-4672-a03f-fc37ac5394b2"></script>
-  <script defer src="https://cloud.umami.is/script.js" data-website-id="e983c61e-7fdc-4c87-96a4-e64ecd9b8419"></script>
-  <script defer src="../scripts/script.js"></script>
-  <title>Jean Johnsen | Athletics</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The sports chapter behind Jean Johnsen's work in software, automation and engineering.">
+    <meta name="keywords" content="Jean Johnsen, athletics, sports, 800m, Team Danmark, Adidas">
+    <meta name="author" content="Jean Johnsen">
+    <meta property="og:title" content="Jean Johnsen | Sports">
+    <meta property="og:site_name" content="Jean Johnsen">
+    <meta property="og:url" content="https://jeanjohnsen.github.io/sports/">
+    <meta property="og:description" content="Former elite athlete with a background in national and international middle-distance competition.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/svg+xml" href="../logo/hojfrekvens-icon.svg">
+    <link rel="stylesheet" href="../style.css">
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="1186d00c-e282-4672-a03f-fc37ac5394b2"></script>
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="e983c61e-7fdc-4c87-96a4-e64ecd9b8419"></script>
+    <script defer src="../scripts/script.js"></script>
+    <title>Jean Johnsen | Sports</title>
 </head>
 <body>
-  <a class="sr-only" rel="me" href="https://github.com/Jeanjohnsen">GitHub</a>
+    <a class="sr-only" rel="me" href="https://github.com/Jeanjohnsen">GitHub</a>
+    <canvas id="particles" aria-hidden="true"></canvas>
+    <div id="progress" aria-hidden="true"></div>
 
-  <main class="page-shell">
-    <header class="hero" id="top">
-      <div class="hero-copy" data-reveal>
-        <div class="hero-brand">
-          <picture class="brand-picture">
-            <source srcset="../logo/hojfrekvens-icon-light.svg" media="(prefers-color-scheme: light)">
-            <img class="brand-icon" src="../logo/hojfrekvens-icon.svg" alt="Høj Frekvens" width="52" height="52">
-          </picture>
-          <span>Høj Frekvens</span>
-        </div>
-        <p class="hero-eyebrow">Athletics · 800m · Team Danmark</p>
-        <h1>Former Elite Athlete</h1>
-        <p class="hero-role">Before software and automation, I spent years in elite middle-distance sport where pace, structure and repeatability mattered every day.</p>
-      </div>
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a class="brand-link" href="#sports-overview" aria-label="Hoj Frekvens / Sports">
+                <span class="brand-mark" aria-hidden="true">
+                    <img src="../logo/hojfrekvens-icon.svg" alt="">
+                </span>
+                <span class="brand-text">Hoj Frekvens / Sports</span>
+            </a>
 
-      <div class="hero-intro" data-reveal>
-        <p class="hero-body">Sport shaped how I work long before I wrote production code. Training blocks, race plans and recovery cycles taught me how to stay patient, sharpen details and keep showing up when the result depends on consistency.</p>
-        <p class="hero-body">That mindset still carries into technical work: stay calm under pressure, trust the process, and build systems that can perform when the moment gets real.</p>
-        <ul class="skill-pills" aria-label="Athletic traits">
-          <li>Discipline</li>
-          <li>Pacing</li>
-          <li>Resilience</li>
-          <li>Consistency</li>
-          <li>Execution</li>
-          <li>Focus</li>
-        </ul>
-      </div>
-
-      <dl class="hero-facts" data-reveal>
-        <div class="hero-fact hero-fact-profile">
-          <img class="sports-profile-shot" src="../etc/teamdkimg.png" alt="Jean Johnsen during his athletics career">
-          <div>
-            <dt>Peak chapter</dt>
-            <dd>Elite athletics, 2017 — 2020</dd>
-          </div>
+            <nav class="site-menu" aria-label="Sports navigation">
+                <a class="site-link" href="#sports-overview" data-nav-link="sports-overview">Intro</a>
+                <a class="site-link" href="#performance" data-nav-link="performance">Performance</a>
+                <a class="site-link" href="#mindset" data-nav-link="mindset">Mindset</a>
+                <a class="site-link" href="#archive" data-nav-link="archive">Archive</a>
+                <a class="site-link" href="#reach-out" data-nav-link="reach-out">Contact</a>
+                <a class="site-link cta" href="../">Main portfolio</a>
+            </nav>
         </div>
-        <div class="hero-fact">
-          <dt>Competition</dt>
-          <dd>National and international 800m racing</dd>
-        </div>
-        <div class="hero-fact">
-          <dt>Set-up</dt>
-          <dd>Adidas &amp; Team Danmark</dd>
-        </div>
-        <div class="hero-fact">
-          <dt>Elsewhere</dt>
-          <dd><a class="text-link" href="../">Back to the main CV</a> · <a class="text-link" href="https://www.strava.com/athletes/26559266" target="_blank" rel="noreferrer">Strava</a></dd>
-        </div>
-      </dl>
     </header>
 
-    <section class="section-block" id="career-highlights">
-      <div class="section-head" data-reveal>
-        <p class="section-kicker">Highlights</p>
-        <h2>Athletic Career</h2>
-        <p class="section-intro">The sports chapter is not separate from the rest of the story. It is where discipline, pacing and execution stopped being abstractions and became habits.</p>
-      </div>
+    <main class="page-shell sports-shell">
+        <section class="section-panel hero-panel" id="sports-overview" data-section="sports-overview">
+            <div class="orb orb-c panel-orb" style="width: 480px; height: 480px; top: -100px; left: -120px; animation-delay: 0s;"></div>
+            <div class="orb orb-m panel-orb" style="width: 420px; height: 420px; bottom: -110px; right: -80px; animation-delay: 2s;"></div>
 
-      <div class="work-list">
-        <article class="work-item" data-reveal>
-          <span class="work-meta">Competition</span>
-          <div class="work-body">
-            <h3>800m at elite level</h3>
-            <p>Former elite athlete with national and international middle-distance competition experience from 2017 to 2020.</p>
-          </div>
-        </article>
-        <article class="work-item" data-reveal>
-          <span class="work-meta">Environment</span>
-          <div class="work-body">
-            <h3>Adidas &amp; Team Danmark</h3>
-            <p>Built inside a high-performance setup where recovery, planning and repeatability mattered just as much as raw effort.</p>
-          </div>
-        </article>
-        <article class="work-item" data-reveal>
-          <span class="work-meta">Carryover</span>
-          <div class="work-body">
-            <h3>Habits that still translate</h3>
-            <p>Consistency, calm under pressure and respect for process still shape how I build software, work with automation and handle technical problems.</p>
-          </div>
-        </article>
-      </div>
-    </section>
+            <div class="content hero-layout">
+                <div class="hero-copy">
+                    <div class="tag reveal s1">Sports chapter · 800m · Team Danmark · Adidas</div>
+                    <h1 class="reveal s2">Sport built the operating system</h1>
+                    <p class="subtitle reveal s3">
+                        Long before automation projects and software tools, elite middle-distance sport taught me how to pace,
+                        prepare, recover and execute when the pressure is real.
+                    </p>
+                    <div class="divider reveal s4"></div>
+                    <div class="hero-pills reveal s5">
+                        <span class="pill">National and international competition</span>
+                        <span class="pill">Execution under load</span>
+                        <span class="pill pill-m">Still part of the same story</span>
+                    </div>
+                    <div class="cta-row reveal s6">
+                        <a class="cta-link primary" href="https://www.strava.com/athletes/26559266" target="_blank" rel="noreferrer">Open Strava</a>
+                        <a class="cta-link" href="../">Main portfolio</a>
+                    </div>
+                </div>
 
-    <section class="section-block" id="mindset">
-      <div class="section-head" data-reveal>
-        <p class="section-kicker">Mindset</p>
-        <h2>What Carried Over</h2>
-        <p class="section-intro">The overlap between sport and engineering is less about motivation and more about dependable habits that keep paying off over time.</p>
-      </div>
+                <aside class="hero-aside reveal s6">
+                    <div class="card-grid cols-1">
+                        <div class="card">
+                            <div class="stat-num">800m</div>
+                            <div class="stat-label">Middle-distance focus during the elite years</div>
+                        </div>
+                        <div class="card">
+                            <div class="stat-num">2017—20</div>
+                            <div class="stat-label">Peak competition years with Team Danmark and Adidas</div>
+                        </div>
+                        <div class="card">
+                            <div class="stat-num">Now</div>
+                            <div class="stat-label">Still shaping how I work with technical systems</div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
 
-      <div class="elsewhere-grid">
-        <article class="elsewhere-item" data-reveal>
-          <span class="work-meta">Discipline</span>
-          <p>Training makes feedback immediate. If the process slips, the result usually tells you fast, which is still a useful way to think about technical work.</p>
-        </article>
-        <article class="elsewhere-item" data-reveal>
-          <span class="work-meta">Execution</span>
-          <p>Race day rewards clarity: do fewer things, do them well, and commit when the moment arrives. That same rhythm maps naturally to engineering.</p>
-        </article>
-      </div>
-    </section>
+        <section class="section-panel" id="performance" data-section="performance">
+            <div class="orb orb-c panel-orb" style="width: 360px; height: 360px; top: 20px; right: -60px; animation-delay: 1.1s;"></div>
 
-    <section class="section-block" id="still-moving">
-      <div class="section-head" data-reveal>
-        <p class="section-kicker">Still Moving</p>
-        <h2>Track, Archive, Continue</h2>
-        <p class="section-intro">A small part of that chapter remains public here: the visual record, the training trail and the link back to the broader CV site.</p>
-      </div>
+            <div class="content">
+                <div class="tag reveal s1">Performance</div>
+                <h2 class="reveal s2">The chapter before software still matters</h2>
 
-      <div class="sports-detail-grid">
-        <figure class="sports-photo-card" data-reveal>
-          <img src="../etc/framed-1.png" alt="Jean Johnsen during his athletics career">
-          <figcaption>The athletics years still sit underneath the current work: same appetite for iteration, same respect for preparation, different arena.</figcaption>
-        </figure>
+                <div class="two-col sports-media-grid reveal s3">
+                    <figure class="card visual-card">
+                        <img src="../etc/teamdkimg.png" alt="Jean Johnsen during his athletics career">
+                    </figure>
 
-        <div class="contact-list">
-          <a class="contact-row contact-row-strava" href="https://www.strava.com/athletes/26559266" target="_blank" rel="noreferrer" data-reveal>
-            <span class="contact-label">Strava</span>
-            <strong>Follow the training trail</strong>
-            <span>Still moving, still curious, now with a little less race-day tension.</span>
-          </a>
+                    <div class="stack-column">
+                        <div class="card">
+                            <span class="card-tag">Competition</span>
+                            <h3>National and international middle-distance racing</h3>
+                            <p>Years spent inside a structure where details, recovery and execution all had to line up at the right time.</p>
+                        </div>
+                        <div class="card">
+                            <span class="card-tag">Environment</span>
+                            <h3>High-performance support systems</h3>
+                            <p>Adidas and Team Danmark meant routines, standards and feedback loops that had to be respected daily.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-          <a class="contact-row" href="../" data-reveal>
-            <span class="contact-label">Return</span>
-            <strong>Back to the main CV site</strong>
-            <span>See the software, automation and engineering side of the story.</span>
-          </a>
-        </div>
-      </div>
-    </section>
+        <section class="section-panel" id="mindset" data-section="mindset">
+            <div class="orb orb-m panel-orb" style="width: 340px; height: 340px; bottom: -60px; left: -60px; animation-delay: 0.6s;"></div>
 
-    <footer>
-      Jean Johnsen · CVR 44757567
-    </footer>
-  </main>
+            <div class="content">
+                <div class="tag reveal s1">Mindset Transfer</div>
+                <h2 class="reveal s2">What carried over into engineering work</h2>
 
-  <a href="../" class="cv-btn" aria-label="Back to Jean Johnsen CV">
-    <picture class="cv-btn-icon">
-      <source srcset="../logo/hojfrekvens-icon-light.svg" media="(prefers-color-scheme: light)">
-      <img src="../logo/hojfrekvens-icon.svg" alt="" width="28" height="28">
-    </picture>
-    <span class="cv-btn-copy">
-      <span class="cv-btn-label">CV</span>
-      <span class="cv-btn-sub">Main site</span>
-    </span>
-  </a>
+                <div class="card-grid cols-3 reveal s3">
+                    <article class="card">
+                        <span class="card-tag">Preparation</span>
+                        <h3>Train the boring parts</h3>
+                        <p>If fundamentals slip, the result usually tells you quickly. That is still useful engineering logic.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-tag">Execution</span>
+                        <h3>Do fewer things, better</h3>
+                        <p>Race day rewards clarity. Production systems do too.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-tag">Recovery</span>
+                        <h3>Sustainable pace beats chaos</h3>
+                        <p>Good performance is repeatable. The best process is the one you can trust next week as well.</p>
+                    </article>
+                </div>
+
+                <div class="two-col reveal s4">
+                    <div class="ok-box">
+                        <h3>Still useful today</h3>
+                        <ul class="neon-list">
+                            <li>Respect the process, not just the headline result.</li>
+                            <li>Keep feedback loops short and honest.</li>
+                            <li>Build for execution when tired, not only when fresh.</li>
+                            <li>Stay calm enough to make the next useful decision.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="quote">Good systems are not loud. They are well-timed, well-practised and dependable when people are under pressure.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-panel" id="archive" data-section="archive">
+            <div class="orb orb-c panel-orb" style="width: 360px; height: 360px; top: -40px; left: -50px; animation-delay: 1.5s;"></div>
+
+            <div class="content">
+                <div class="tag reveal s1">Archive</div>
+                <h2 class="reveal s2">Track, archive, continue</h2>
+
+                <div class="two-col sports-media-grid reveal s3">
+                    <figure class="card visual-card">
+                        <img src="../etc/framed-1.png" alt="Jean Johnsen during his athletics career">
+                    </figure>
+
+                    <div class="stack-column">
+                        <div class="card">
+                            <span class="card-tag">Still moving</span>
+                            <h3>The sports years still sit underneath the current work</h3>
+                            <p>Same appetite for iteration, same respect for preparation, different arena.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Public trail</h3>
+                            <ul class="neon-list">
+                                <li>Training archive through Strava.</li>
+                                <li>Visual archive through the sports images.</li>
+                                <li>Contextual bridge back into the broader portfolio.</li>
+                            </ul>
+                        </div>
+                        <div class="cta-row">
+                            <a class="cta-link primary" href="https://www.strava.com/athletes/26559266" target="_blank" rel="noreferrer">Strava</a>
+                            <a class="cta-link" href="../etc/CV.pdf">CV PDF</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-panel" id="reach-out" data-section="reach-out">
+            <div class="orb orb-m panel-orb" style="width: 420px; height: 420px; bottom: -100px; right: -80px; animation-delay: 0.9s;"></div>
+
+            <div class="content centered-content">
+                <div class="tag reveal s1">Contact</div>
+                <h2 class="reveal s2">Still an open line</h2>
+                <p class="subtitle reveal s3">
+                    If you want to talk athletics, process, software or the overlap between them,
+                    the easiest place to start is still a direct message.
+                </p>
+
+                <div class="card-grid cols-3 reveal s4 contact-grid">
+                    <a class="card" href="mailto:jrj@hojfrekvens.xyz">
+                        <span class="card-tag">Email</span>
+                        <strong>jrj@hojfrekvens.xyz</strong>
+                        <p>Open loop for collaborations, projects or interesting conversations.</p>
+                    </a>
+                    <a class="card" href="https://www.strava.com/athletes/26559266" target="_blank" rel="noreferrer">
+                        <span class="card-tag">Strava</span>
+                        <strong>Follow the training trail</strong>
+                        <p>The moving archive of work, rhythm and consistency.</p>
+                    </a>
+                    <a class="card" href="../">
+                        <span class="card-tag">Return</span>
+                        <strong>Back to main portfolio</strong>
+                        <p>See the software, automation and engineering side of the same story.</p>
+                    </a>
+                </div>
+
+                <p class="section-footer reveal s5">Hoj Frekvens · CVR 44757567</p>
+            </div>
+        </section>
+    </main>
+
+    <a class="floating-home-link" href="https://hojfrekvens.xyz" aria-label="Go to Hojfrekvens.xyz">
+        <span class="floating-home-link-label">Hojfrekvens.xyz</span>
+    </a>
 </body>
 </html>
