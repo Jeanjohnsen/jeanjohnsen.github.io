@@ -408,6 +408,15 @@ li {
 .cols-1 { grid-template-columns: 1fr; }
 .cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
+.career-group + .career-group {
+    margin-top: clamp(1.6rem, 3vw, 2.4rem);
+}
+
+.career-group .tag {
+    display: block;
+    margin-bottom: 0.85rem;
+}
+
 .card {
     position: relative;
     background:

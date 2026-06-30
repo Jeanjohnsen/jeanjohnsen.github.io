@@ -1,0 +1,36 @@
+name: Build CV
+
+# Compiles cv/cv.tex into etc/cv.pdf in the cloud whenever the source changes,
+# then commits the rebuilt PDF back so GitHub Pages serves the latest version.
+# Local equivalent: cv/build.ps1 (same Tectonic engine, for previewing before push).
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "cv/cv.tex"
+      - ".github/workflows/cv.yml"
+  workflow_dispatch: {}        # adds a manual "Run workflow" button
+
+permissions:
+  contents: write              # allow committing the rebuilt PDF back
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Tectonic
+        run: |
+          curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net | sh
+          echo "$PWD" >> "$GITHUB_PATH"
+
+      - name: Compile CV
+        run: tectonic cv/cv.tex --outdir cv      # writes cv/cv.pdf directly
+
+      - name: Commit rebuilt PDF
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Rebuild cv.pdf from cv.tex [skip ci]"
+          file_pattern: cv/cv.pdf

@@ -1,0 +1,9 @@
+# Tectonic binary cache + build output
+.tools/
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.xdv
+*.fmt

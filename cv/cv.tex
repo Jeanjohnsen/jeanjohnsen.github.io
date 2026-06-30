@@ -1,0 +1,170 @@
+%-------------------------
+% Resume in LaTeX
+% Adapted from Sourabh Bajaj's resume template:
+% https://github.com/sb2nov/resume
+% Tailored for Jean R. Johnsen
+%------------------------
+
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.45in}
+\addtolength{\evensidemargin}{-0.45in}
+\addtolength{\textwidth}{0.9in}
+\addtolength{\topmargin}{-0.55in}
+\addtolength{\textheight}{1.15in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\definecolor{heading}{HTML}{17324D}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-3pt}\scshape\raggedright\large\color{heading}
+}{}{0em}{}[\color{heading}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSkill}[2]{
+  \item\small{\textbf{#1}: #2 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=1.1em, itemsep=0.2em, topsep=0.25em]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%-------------------------------------------
+% CV STARTS HERE
+%-------------------------------------------
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+  {\Huge \textbf{Jean R. Johnsen}}\\[4pt]
+  {\large Advanced Automation Engineer}\\[6pt]
+  Hedehusene, Denmark \textbar{} +45 28 90 58 07 \textbar{}
+  \href{mailto:jeanjohnsen@pm.me}{jrj@hojfrekvens.xyz} \textbar{}
+  \href{https://cv.hojfrekvens.xyz/}{cv.hojfrekvens.xyz}
+\end{center}
+
+%-----------PROFILE-----------------
+\section{Profile}
+\small
+Advanced Automation Engineer with hands-on experience in ABB 800xA, PCS/DCS application work, and software for technical systems where reliability and clarity matter. Builds and tests automation solutions for GMP-regulated pharmaceutical production at NNE, after delivering ABB 800xA solutions at Tipatek and working close to production at Novo Nordisk in Kalundborg. Brings a practical, GMP-aware mindset to complex pharmaceutical automation projects.
+\normalsize
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {NNE}{Sep 2026 -- Present}
+    {Advanced Automation Engineer}{Kalundborg, Denmark}
+    \resumeItemListStart
+      \resumeItem{Design, configure, and test PCS/DCS automation applications for GMP-regulated pharmaceutical production.}
+      \resumeItem{Deliver robust automation solutions with focus on reliability, structured verification, and clear documentation.}
+      \resumeItem{Work cross-functionally close to production to support quality-critical operations.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Tipatek A/S}{Mar 2025 -- Aug 2026}
+    {Junior Automation Engineer}{Odense, Denmark}
+    \resumeItemListStart
+      \resumeItem{Developed, configured, and tested ABB 800xA automation solutions, including control logic, system configuration, and operator interfaces.}
+      \resumeItem{Supported structured verification, troubleshooting, and quality-focused delivery of industrial automation systems.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Novo Nordisk A/S}{Aug 2022 -- Feb 2025}
+    {Process Operator and IT / Automation Projects}{Kalundborg, Denmark}
+    \resumeItemListStart
+      \resumeItem{Worked in day-to-day operation of process equipment in pharma production, including troubleshooting and repair in a quality-critical environment.}
+      \resumeItem{Contributed to PTFE valve analysis and piping optimization with focus on process robustness and maintainability.}
+      \resumeItem{Supported automation and IT improvement efforts through testing, practical problem solving, and collaboration close to production.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Netcompany}{Jan 2021 -- Jun 2022}
+    {Freelance Software Architect}{Remote}
+    \resumeItemListStart
+      \resumeItem{Delivered mobile and web solutions for Danish clients with focus on system design, maintainability, and secure implementation.}
+      \resumeItem{Worked across C\#, backend architecture, and technical decision-making for both small and larger customer projects.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Level 3 Technologies}{Dec 2017 -- Oct 2018}
+    {Junior Software Engineer}{Odense, Denmark}
+    \resumeItemListStart
+      \resumeItem{Built internal modules, scripts, and prototype tooling that improved technical workflows and sped up proof-of-concept work.}
+      \resumeItem{Developed a method for comparing cause-and-effect diagrams with real shutdown events, reducing analysis effort and strengthening traceability.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {SIMAC}{Jan 2025 -- Present}
+    {Bachelor of Technology in Marine Engineering}{Svendborg, Denmark}
+  \resumeSubheading
+    {Processkolen}{Aug 2022 -- Jan 2025}
+    {EUD - Process and Optimization}{Kalundborg, Denmark}
+  \resumeSubheading
+    {University of Southern Denmark}{Sep 2016 -- Jan 2020}
+    {Bachelor of Science in Computer Science}{Odense, Denmark}
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0in, label={}]
+  \resumeSkill{Automation}{ABB 800xA, ABB SattLine, control logic, operator interfaces, system testing, troubleshooting, technical documentation}
+  \resumeSkill{Pharma and production}{GMP-aware work close to production, process equipment, LMES, PAS-X, cross-functional collaboration}
+  \resumeSkill{Programming}{C\#, Java, Python, Rust}
+  \resumeSkill{Tools and languages}{Git, GitLab, Danish, English}
+\end{itemize}
+
+%-----------ADDITIONAL EXPERIENCE-----------------
+\section{Additional Experience}
+\begin{itemize}[leftmargin=0in, label={}]
+  \resumeSkill{TV2}{Student Developer and Data Analyst in a broadcasting environment (2016 -- 2017)}
+  \resumeSkill{Hauch's Physiske Cabinet}{Web Developer and Guide, combining technical work with communication (2015)}
+  \resumeSkill{Adidas \& Team Danmark}{Former elite athlete with national and international 800m competition experience (2017 -- 2020)}
+  \resumeSkill{BHS-PL Beton}{Former continental and danish A series cyclist (2022 -- 2025)}
+\end{itemize}
+
+%-------------------------------------------
+\end{document}
