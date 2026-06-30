@@ -25,7 +25,7 @@
     --faint: rgba(255, 255, 255, 0.12);
     --border: rgba(0, 255, 204, 0.12);
     --border-strong: rgba(0, 255, 204, 0.24);
-    --display: "Mikkeller Special Brew", "Space Grotesk", sans-serif;
+    --display: "Space Grotesk", sans-serif;
     --body: "Inter", sans-serif;
     --mono: "JetBrains Mono", monospace;
     --radius: 18px;
@@ -318,6 +318,11 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+/* Mikkeller Special Brew used only as a brand accent on the hero name */
+.brand-name {
+    font-family: "Mikkeller Special Brew", "Space Grotesk", sans-serif;
 }
 
 h2 {
