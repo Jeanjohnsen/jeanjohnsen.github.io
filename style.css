@@ -320,9 +320,13 @@ h1 {
     background-clip: text;
 }
 
-/* Mikkeller Special Brew used only as a brand accent on the hero name */
+/* Mikkeller Special Brew used only as a brand accent on the hero name.
+   Shares the cyan->magenta brand gradient with the nav logo for cohesion. */
 .brand-name {
     font-family: "Mikkeller Special Brew", "Space Grotesk", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    background-image: linear-gradient(115deg, var(--cyan) 0%, var(--cyan) 38%, var(--magenta) 100%);
 }
 
 h2 {
