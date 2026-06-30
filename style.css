@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap");
 
+@font-face {
+    font-family: "Mikkeller Special Brew";
+    src: url("font/MikkellerSpecialBrew.ttf") format("truetype");
+    font-display: swap;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -19,7 +25,7 @@
     --faint: rgba(255, 255, 255, 0.12);
     --border: rgba(0, 255, 204, 0.12);
     --border-strong: rgba(0, 255, 204, 0.24);
-    --display: "Space Grotesk", sans-serif;
+    --display: "Mikkeller Special Brew", "Space Grotesk", sans-serif;
     --body: "Inter", sans-serif;
     --mono: "JetBrains Mono", monospace;
     --radius: 18px;
