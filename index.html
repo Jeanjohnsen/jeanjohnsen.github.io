@@ -25,7 +25,24 @@
     <header class="site-header">
         <div class="site-header-inner">
             <a class="brand-link" href="#overview" aria-label="Høj Frekvens / Jean">
-                <img class="brand-logo" src="logo/logo-navbar.svg" alt="">
+                <svg class="brand-logo" viewBox="0 0 170 36" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="hfg" x1="0" y1="0" x2="1" y2="0">
+                            <stop offset="0%" stop-color="#00ffcc"/>
+                            <stop offset="100%" stop-color="#ff00aa"/>
+                        </linearGradient>
+                    </defs>
+                    <rect x="0" y="2" width="32" height="32" rx="9" fill="#0a111d" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+                    <path d="M5,18 C7,12 9,12 11,18 C13,24 15,24 17,18 C19,12 21,12 23,18 C25,24 27,24 27,18"
+                          fill="none" stroke="url(#hfg)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <text x="42" y="18" dominant-baseline="central"
+                          font-family="'Space Grotesk', ui-sans-serif, system-ui, sans-serif"
+                          font-weight="700" font-size="15" fill="url(#hfg)">Høj</text>
+                    <text x="72" y="18" dominant-baseline="central"
+                          font-family="'Space Grotesk', ui-sans-serif, system-ui, sans-serif"
+                          font-weight="500" font-size="14" letter-spacing="0.4" fill="#9ca3b8">Frekvens</text>
+                    <line x1="42" y1="28" x2="155" y2="28" stroke="url(#hfg)" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+                </svg>
             </a>
 
             <nav class="site-menu" aria-label="Primary navigation">
@@ -47,7 +64,7 @@
             <div class="content hero-layout">
                 <div class="hero-copy">
                     <div class="tag reveal s1">Portfolio · Software · Automation · Technical Systems</div>
-                    <h1 class="reveal s2">Jean Johnsen</h1>
+                    <h1 class="reveal s2 brand-name">Jean Johnsen</h1>
                     <p class="subtitle reveal s3">
                         Software, automation and technical systems that have to keep moving outside the screen.
                         The goal is dependable operation with less drag between people, process and equipment.
@@ -240,8 +257,12 @@
                 <h2 class="reveal s2">The athletics chapter is part of the same operating system</h2>
 
                 <div class="two-col sports-media-grid reveal s3">
-                    <figure class="card visual-card" size="50%">
-                        <img size="50%" src="img/teamdkimg.png" alt="Jean Johnsen during his athletics career">
+                    <figure class="visual-card">
+                        <img src="img/teamdkimg.webp" alt="Jean Johnsen's Team Danmark elite-athlete card" loading="lazy" decoding="async">
+                        <figcaption>Team Danmark elite-athlete card · 2017–2020</figcaption>
+                        <div class="cta-row">
+                            <a class="cta-link primary" href="https://www.strava.com/athletes/26559266" target="_blank" rel="noreferrer">View on Strava</a>
+                        </div>
                     </figure>
 
                     <div class="stack-column">
@@ -263,9 +284,6 @@
                                 <li>Execution under pressure is trainable.</li>
                                 <li>Feedback loops only work if you respect them.</li>
                             </ul>
-                        </div>
-                        <div class="cta-row">
-                            <a class="cta-link primary" href="https://www.strava.com/athletes/26559266" target="_blank" rel="noreferrer">Strava</a>
                         </div>
                     </div>
                 </div>
